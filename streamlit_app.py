@@ -11,9 +11,13 @@ Created on Sun Sep  8 00:00:10 2024
 
 @author: DELL
 """
-
+import pickle
 import streamlit as st
 import joblib
+pickle_in = open(‘classifier.pkl’, ‘rb’)
+classifier = pickle.load(pickle_in)
+
+@st.cache()
 
 
 def main():
