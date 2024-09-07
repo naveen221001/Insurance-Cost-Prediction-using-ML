@@ -27,7 +27,7 @@ def main():
     
     st.markdown(html_temp, unsafe_allow_html=True)
     
-    model = joblib.load('F:model_joblib_gr.pkl')
+    model = joblib.load('model_joblib_gr.pkl')
 
  
     # Input fields
